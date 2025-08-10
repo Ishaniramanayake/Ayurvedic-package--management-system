@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const packageController = require('../controllers/PackageController');
+
+// Define your routes
+router.post("/add-package-doctor", packageController.addPackageAndDoctor);
+router.get("/get-package-doctor", packageController.getPackageAndDoctor);
+
+
+module.exports = router;
